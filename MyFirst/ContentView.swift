@@ -19,6 +19,9 @@ struct ContentView: View {
                 .padding()
             Button(action: {
                 outputText = "Hi, Swift!"
+                
+                print("デバッグテスト")
+                print(outputText)
             }) {
                 Text("切替ボタン")
                     .foregroundColor(Color.white)
@@ -31,10 +34,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ContentView()
-            ContentView()
-        }
+        ContentView()
     }
 }
 
